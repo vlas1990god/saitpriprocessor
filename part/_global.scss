@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font: {
+        family:$garamond;
+        size: 16px;
+    }
+    color: $darkgrey;
+}
+a {
+    text-decoration: none;
+}
