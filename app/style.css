@@ -25,6 +25,73 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 15px 0; }
+  padding: 15px 0;
+  color: #fff; }
+  @media screen and (min-width: 576px) {
+    .contact {
+      padding: 70px 0; } }
+  .contact form {
+    background-color: #4B69B1;
+    padding: 50px 15px;
+    text-align: center; }
+  .contact input {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    padding: 15px 30px; }
+    .contact input[type=text], .contact input[type=email] {
+      background-color: #253458;
+      color: #fff; }
+      .contact input[type=text]:focus, .contact input[type=email]:focus {
+        background-color: #131a2c; }
+    .contact input[type=submit] {
+      display: inline-block;
+      width: auto;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 0 50px;
+      background-color: #253458;
+      border-radius: 3px; }
+  .contact h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    background-image: url(images/line.svg);
+    background-repeat: repeat-x;
+    background-position: center; }
+  .contact span {
+    background-color: #4B69B1;
+    display: inline-block;
+    padding: 5px 30px; }
+  .contact p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px; }
+  .contact_button {
+    background-image: url(images/lenta.png);
+    background-repeat: repeat-x;
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px -30px;
+    position: relative; }
+    .contact_button::after, .contact_button::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-bottom: 15px solid transparent;
+      bottom: -15px; }
+    .contact_button::after {
+      border-left: 15px solid #A86F00;
+      right: 0; }
+    .contact_button::before {
+      border-right: 15px solid #A86F00;
+      left: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,113 @@
         repeat:no-repeat;
         position: center top;
         size: cover;
-    };
+    }
     padding: 15px 0;
+
+    @include sm {
+        padding:70px 0;
+    }
+    color: $white;
+
+    form {
+        background-color:$whiteblue;
+         padding: 50px 15px;  
+         text-align:center; 
+        
+    }
+    input {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        outline: none;
+        border: none;
+        padding: 15px 30px;
+
+        &[type=text],
+
+        &[type=email] {
+          background-color: $darkblue;
+          color: $white;
+
+          &:focus {
+              background-color: $darkblue/2;
+          }
+
+        }
+        &[type=submit] {
+               display: inline-block;
+               width: auto;
+               font: {
+                   family: $oswald;
+                   size: 1.5em;
+               }
+               text: {
+                   transform: uppercase;
+               }
+               color: $white;
+               padding: 0 50px;
+               background-color: $darkblue;
+               border-radius: 3px;
+
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        background: {
+            image: url(images/line.svg);
+            repeat:repeat-x;
+            position: center;
+        }
+        
+        
+    }
+    
+    span {
+        background-color: $whiteblue;
+        display: inline-block;
+        padding: 5px 30px;
+    }
+    p{
+        font: {
+            size: 24px;
+            weight: bold ;
+        }
+        margin: 15px;
+    }
+    &_button {
+        background: {
+            image:url(images/lenta.png);
+            repeat:repeat-x;
+
+        }
+        height: 117px;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        margin: 15px -30px;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-bottom: 15px solid transparent;
+            bottom: -15px;
+        }
+        &::after {
+            border-left: 15px solid #A86F00;
+            
+            right: 0;
+        }
+        &::before {
+            border-right: 15px solid #A86F00;
+
+            left: 0;
+        }
+    }
+
 }
